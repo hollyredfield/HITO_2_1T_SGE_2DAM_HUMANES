@@ -1,0 +1,40 @@
+# 🍷 Encuesta de Consumo de Alcohol - Base de Datos
+
+## 📝 Información Importante
+
+La base de datos ha sido creada como:
+- Nombre: `encuesta.db`
+- ~~No `encuestas.db`~~
+
+## 🔧 Configuración
+
+Si necesitas usar un nombre diferente para la base de datos:
+1. Localiza las referencias en el código
+2. Reemplaza `encuesta.db` por el nombre deseado
+3. Asegúrate de actualizar todas las conexiones
+
+## 📁 Estructura del Proyecto
+
+alcohol_survey/ ├── database/ │ ├── connection.py # Conexión a BD │ └── crud.py # Operaciones CRUD └── encuesta.db # Base de datos
+
+
+## ⚙️ Parámetros de Conexión
+```python
+connection = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='',
+    database='encuesta'  # <- Nombre actual de la BD
+)
+
+📌 Notas Adicionales
+Todos los paquetes se descargan e instalan automáticamente al ejecutar el main.py, en caso de error o de no tener uno de ellos o todos, el programa se encargará de instalarlos por ti.
+Asegúrate de que XAMPP/WAMP está ejecutándose
+Verifica que tienes permisos de escritura en la carpeta del proyecto
+Mantén respaldos de la base de datos
+🤝 Contribuciones
+Si encuentras algún problema o tienes sugerencias, por favor abre un issue.
+
+📜 Licencia
+Este proyecto está bajo la de HollyRedfield (Mi seudónimo) ```
+
